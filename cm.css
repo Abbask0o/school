@@ -1,0 +1,101 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;	
+}
+
+#app{
+	display: flex;
+	width: 100%;
+	height: 100%;
+	background-image: url(/images/1.png);
+	background-repeat: no-repeat;
+	background-size: 80% 40%;
+	background-position: top 20% left;
+	align-items: center;
+	justify-content: center;
+	transition: 1.5s ease-in-out;
+}
+#app .container{
+	display: flex;
+	flex-direction: column;
+	width: 280px;
+	height: auto;
+	padding: 40px 20px;
+	background: transparent;
+	background-color: rgba(255, 255, 255, 0.08);
+	backdrop-filter: blur(30px);
+	border-radius: 20px;
+	animation: animate 1s linear infinite;
+}
+
+#app .container .heading{
+	display: flex;
+	width: 100%;
+	height: 40px;
+	margin: 20px 0px 0px 0px;
+	align-items: center;
+	justify-content: center;
+}
+#app .container .heading h2{
+	display: flex;
+	color: #FFF;
+}
+#app .container form{
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	height: auto;
+	padding: 20px 20px;
+	margin: 20px 0px 0px 0px;
+	border-radius: 10px;
+	align-items: center;
+	justify-content: center;
+}
+#app .container form label{
+	display: flex;
+	width: 100%;
+	height: 30px;
+	align-items: center;
+	justify-content: space-between;
+}
+#app .container form label ion-icon{
+	display: flex;
+	font-size: 20px;
+	color: deepskyblue;
+}
+#app .container form label input{
+	display: flex;
+	height: 100%;
+	width: 85%;
+	color: blue;
+	font-weight: bold;
+	border: none;
+	outline: none;
+	background: transparent;
+	border-radius: 5px;
+	padding: 0px 10px;
+}
+
+#app .container form label input:hover{
+	border: 1px solid deepskyblue;
+}
+
+#app .container button{
+	border: none;
+	outline: none;
+	padding: 10px 30px;
+	margin: 10px 0px;
+	background: deepskyblue;
+	color: #FFF;
+	font-weight: bold;
+	font-size: 16px;
+	border-radius: 5px;
+	transition: 0.5s;
+}
+#app .container button:hover{
+	background: #FFF;
+	color: #191919;
+	font-weight: bold;
+	box-shadow: 0px 4px 15px 6px rgba(255, 255, 255, 0.5);
+}
